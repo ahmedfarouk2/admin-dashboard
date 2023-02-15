@@ -1,0 +1,41 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(/fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(9, 1fr);
+}
+
+.sidebar {
+    background-color: black;
+    color: aliceblue;
+    grid-column: 1;
+    grid-row: 1 / -1;
+}
+
+.article-container {
+    background-color: lightgray;
+    grid-column: 2;
+    grid-row: 2 / 9;
+}
+
+.header {
+    background-color: aquamarine;
+    grid-column: 2 / -1;
+}
+
+.footer {
+    background-color: purple;
+    color: whitesmoke;
+    grid-row: 9;
+}
